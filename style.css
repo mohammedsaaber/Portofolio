@@ -131,6 +131,68 @@ header nav ul li a
   font-family: sans-serif;
 }
 
+header nav ul li a:hover
+{
+  transition: 1s;
+  color: #f44336;
+}
+
+.header-cases
+{
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+
+header div
+{
+    height: 80px;
+    display: flex;
+    margin-left: 100px;
+}
+
+header nav
+{
+  display: flex;
+}
+
+header div h1
+{
+  border-right: 2px solid #111;
+  padding-right: 20px;
+  line-height: 40px;
+}
+
+header nav ul
+{
+  margin: 20px 30px;
+  line-height: 40px;
+}
+
+.header-cases
+{
+  display: block;
+  color: #111;
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: 700px;
+  border: 1px solid #111;
+  line-height: 40px;
+  padding: 0px 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 550px;
+
+}
+
+.header-cases:hover
+{
+  transition: 1s;
+  background-color: #f44336;
+}
+
+}
+
 /* Main */
 
 .backimg
@@ -145,14 +207,18 @@ header nav ul li a
 
 .main-h1
 {
+  width: 300px;
   color: white;
   font-family: times new roman;
   font-size: 40px;
   font-weight: 900;
   line-height: 60px;
-  text-align: center;
   padding-top: 30px;
   text-shadow: 3px 3px 10px #111;
+  margin: auto;
+  text-align: center;
+
+
 }
 
 main p
@@ -165,7 +231,7 @@ main p
   line-height: 25px;
 }
 
-.box-1
+.box-square
 {
   background-color: lightgrey;
   margin: 15px 15px;
@@ -175,11 +241,67 @@ main p
   text-align: center;
 }
 
-.box-1 a
+.box-square a
 {
   text-decoration: none;
   color: #111;
   font-weight: 600;
+}
+
+.box-triangle
+{
+  background-color: lightgrey;
+  margin: 15px 15px;
+  width: calc(100% - 30px);
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+}
+
+.box-triangle a
+{
+  text-decoration: none;
+  color: #111;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 768px)
+{
+
+.backimg
+{
+  height: 50vh;
+}
+.main-h1
+{
+  width: 500px;
+  padding-top: 70px;
+}
+
+.box-triangle
+{
+  width: calc(50% - 30px);
+  height: 150px;
+  line-height: 150px;
+  float: left;
+
+}
+
+.box-square
+{
+  width: calc(25% - 30px);
+  height: 150px;
+  line-height: 150px;
+  float: left;
+}
+
+.main-boxes
+{
+  width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
 }
 
 footer
@@ -221,4 +343,47 @@ footer
 {
   color: white;
   font-size: 20px;
+}
+
+.footer-links-2
+{
+  display: none;
+}
+
+@media screen and (min-width: 768px)
+{
+  footer
+  {
+    width: calc(100% - 30px);
+    margin: 0 auto;
+    vertical-align: middle;
+  }
+
+  .footer-links-2
+  {
+    display: block;
+    float: left;
+    margin: 20px 20px;
+
+  }
+
+  .footer-links-2 ul
+  {
+    margin: 0 auto;
+
+  }
+
+  .footer-links-2 ul li
+  {
+    list-style: none;
+    margin: 15px 30px;
+    color: white;
+
+  }
+
+.footer-links-2 ul li a
+{
+  font-size: 20px;
+  color: white;
+}
 }
