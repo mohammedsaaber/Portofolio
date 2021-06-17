@@ -308,6 +308,9 @@ footer
 {
   background-color: #111;
   overflow: hidden;
+  width: calc(100% - 30px);
+  margin: 0 auto;
+
 }
 
 .icons
