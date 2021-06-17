@@ -142,7 +142,7 @@ header nav ul li a:hover
   display: none;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1000px) {
 
 header div
 {
@@ -265,7 +265,7 @@ main p
   font-weight: 600;
 }
 
-@media screen and (min-width: 768px)
+@media screen and (min-width: 1000px)
 {
 
 .backimg
@@ -350,7 +350,7 @@ footer
   display: none;
 }
 
-@media screen and (min-width: 768px)
+@media screen and (min-width: 1000px)
 {
   footer
   {
